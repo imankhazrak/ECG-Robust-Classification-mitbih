@@ -1,0 +1,4 @@
+model: lstm
+data_path: data/processed_mlii.pt
+corruption: missing
+levels: [0.05, 0.10, 0.20]

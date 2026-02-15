@@ -1,0 +1,4 @@
+model: lstm
+data_path: data/processed_mlii.pt
+corruption: gaussian
+levels: [20, 10, 5]

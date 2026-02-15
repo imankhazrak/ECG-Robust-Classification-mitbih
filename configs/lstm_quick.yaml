@@ -1,0 +1,12 @@
+# Quick run (5 epochs) for pipeline verification; full runs use lstm_baseline.yaml (100 epochs)
+model: lstm
+hidden_size: 128
+num_layers: 2
+dropout: 0.3
+data_path: data/processed_mlii.pt
+loss: ce
+lr: 0.001
+batch_size: 128
+epochs: 5
+patience: 3
+seed: 42

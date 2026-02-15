@@ -1,0 +1,10 @@
+model: lstm
+data_path: data/processed_mlii.pt
+loss: ce
+lr: 0.001
+batch_size: 128
+epochs: 100
+patience: 15
+seed: 42
+seeds: [42, 1, 2, 3, 4]
+data_fractions: [1.0, 0.5, 0.25, 0.1]

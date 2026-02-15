@@ -1,0 +1,4 @@
+model: lstm
+data_path: data/processed_mlii.pt
+corruption: jitter
+levels: [10, 20, 30]
