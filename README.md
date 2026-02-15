@@ -2,6 +2,8 @@
 
 Automated classification of ECG heartbeats on the **MIT-BIH Arrhythmia Database** using a **CNN + Transformer** hybrid architecture. This repository achieves **98.77% test accuracy** and **0.932 macro F1** (mean over 5 seeds) on the 5-class AAMI heartbeat taxonomy.
 
+![alt text](image/ECG_Architecture_Workflow.png)
+
 ## Highlights
 
 - **State-of-the-art performance**: 98.77% accuracy, 0.932 macro F1 (stratified 80/15/5 split)
