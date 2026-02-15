@@ -29,27 +29,7 @@ Automated classification of ECG heartbeats on the **MIT-BIH Arrhythmia Database*
 
 The **CNN + Transformer** hybrid consists of three stages:
 
-```
-Input (B, 1, 187)
-       │
-       ▼
-┌──────────────────────┐
-│ CNN Feature Extractor │  3 Conv1D blocks (32→64→128 filters), BatchNorm, ReLU, MaxPool
-└──────────────────────┘
-       │
-       ▼
-┌──────────────────────┐
-│ Transformer Encoder   │  Learnable positional encoding, 4 heads, 2 layers
-└──────────────────────┘
-       │
-       ▼
-┌──────────────────────┐
-│ Classification Head   │  Global average pooling, FC(128 → 5)
-└──────────────────────┘
-       │
-       ▼
-  Logits (5 classes)
-```
+![alt text](image/ECG_Model.png)
 
 ### Why CNN + Transformer?
 
@@ -204,9 +184,9 @@ If you use this code or results, please cite:
 ```bibtex
 @misc{ecg-robust-classification-mitbih,
   title={Robust ECG Beat Classification on MIT-BIH},
-  author={},
-  year={2025},
-  url={https://github.com/YOUR_USERNAME/ECG-Robust-Classification-mitbih}
+  author={Iman Khazrak},
+  year={2026},
+  url={https://github.com/imankhazrak/ECG-Robust-Classification-mitbih}
 }
 ```
 
